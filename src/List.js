@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
-
 const List = () => {
   const [listUsers, setListUsers] = useState([]);
 
@@ -15,7 +14,6 @@ const List = () => {
         console.error("Error of listusers:", error);
       }
     };
-
     fetchUsers();
   }, []);
   console.log("listUsers", listUsers);
@@ -31,5 +29,4 @@ const List = () => {
     </div>
   );
 };
-
 export default List;
